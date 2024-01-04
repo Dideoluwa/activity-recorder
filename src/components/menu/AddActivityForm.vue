@@ -3,7 +3,7 @@
     <div v-stop-propagation class="modal">
       <h1>Add activity</h1>
 
-      <form class="activity_form" @submitFormHandler.prevent>
+      <form class="activity_form" @submit.prevent="submitFormHandler">
         <div class="shipments_select">
           <label>Name</label>
           <div class="input">
