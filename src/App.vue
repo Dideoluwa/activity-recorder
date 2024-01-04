@@ -10,7 +10,9 @@
         }"
       /> -->
     </div>
-    <router-view />
+    <div class="body">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -25,9 +27,14 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./styles/main.scss";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
 
 @media only screen and (max-width: 920px) {
+  .body {
+    padding: 5px 15px;
+  }
+
   .menu {
     position: absolute;
     left: 0;

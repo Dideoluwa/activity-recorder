@@ -20,7 +20,7 @@ export default {
 
 <style lang="scss" scoped>
 .nav {
-  padding: 0.625rem 0.5rem;
+  padding: 5px 15px;
   background-color: #f7f7f7;
   display: flex;
   justify-content: flex-start;

@@ -1,0 +1,81 @@
+@import "./variables.scss";
+.input {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid #c4c1c1;
+  height: 3.125em;
+
+  & svg {
+    cursor: pointer;
+    margin-right: 0.75rem;
+  }
+
+  & input {
+    width: 100%;
+    flex: 1;
+    height: auto;
+    display: flex;
+    border: none;
+    border-radius: 0.3125rem;
+    padding: 0.875rem 1rem;
+
+    color: $black-color;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & textarea {
+    width: 100%;
+    resize: none;
+    height: 111.18px;
+    flex: 1;
+    height: auto;
+    display: flex;
+    border: none;
+    border-radius: 0.3125rem;
+    padding: 0.875rem 1rem;
+
+    color: $black-color;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & select {
+    width: 100%;
+    flex: 1;
+    height: auto;
+    display: flex;
+    border: none;
+    border-radius: 0.3125rem;
+    padding: 0.875rem 1rem;
+
+    color: $black-color;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

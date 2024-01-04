@@ -1,0 +1,20 @@
+@import "./variables.scss";
+.button {
+  display: inline-flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  & button {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    background: #f05e22;
+  }
+}
