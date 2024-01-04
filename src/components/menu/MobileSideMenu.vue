@@ -17,13 +17,15 @@
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <rect width="6" height="9" fill="#766EA9" />
-            <rect x="8" width="7" height="5" fill="#766EA9" />
-            <rect x="8" y="7" width="7" height="8" fill="#766EA9" />
-            <rect y="11" width="6" height="4" fill="#766EA9" />
+            <rect
+              width="15"
+              height="15"
+              rx="7.5"
+              fill="#f7ae90"
+              fill-opacity="0.8"
+            />
           </svg>
-
-          <p>Dashboard</p>
+          <p>Home</p>
         </router-link>
       </div>
 
@@ -39,7 +41,7 @@
             width="15"
             height="15"
             rx="7.5"
-            fill="#554B95"
+            fill="#f7ae90"
             fill-opacity="0.8"
           />
         </svg>
@@ -76,6 +78,7 @@ export default {
   position: fixed;
   height: 100vh;
   top: 0px;
+  // left: 0px;
   z-index: 100;
   width: 100%;
   background-color: rgba(196, 196, 196, 0.525);
@@ -83,9 +86,9 @@ export default {
   .modal {
     position: relative;
     padding: 0.3125rem 0.625rem;
-    width: 50%;
+    width: 100%;
     background-color: #fafafa;
-    height: 100vh;
+    height: 40vh;
     overflow: auto;
 
     .modal_logo {
@@ -116,7 +119,7 @@ export default {
       gap: 0.375rem;
 
       .router-link-active {
-        background-color: #554b95;
+        background-color: #f7ae90;
 
         svg {
           fill: #fafafa;
