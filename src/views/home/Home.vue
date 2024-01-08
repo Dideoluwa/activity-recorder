@@ -226,7 +226,6 @@ export default {
         flex-wrap: wrap;
         margin-top: 25px;
         gap: 20px;
-
         height: 450px;
         overflow: auto;
 
@@ -234,15 +233,16 @@ export default {
           animation: slideUp 0.5s ease-in-out forwards;
           text-decoration: none;
           color: #000000;
+          display: flex;
+          width: calc(50% - 10px);
           .home_body_card {
-            width: 160px;
+            display: flex;
+            flex: 1;
             box-shadow: 0px 4px 10px rgba(150, 150, 150, 0.2); /* Base shadow */
             transition: box-shadow 0.2s ease-in-out; /* Smooth hover transition */
-            // flex: 1;
             justify-content: center;
             padding: 5px 12px;
             height: 150px;
-            display: flex;
             // background-color: #fac9b5;
             border: 1px solid #f7ae90;
             gap: 12px;

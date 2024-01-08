@@ -1,5 +1,16 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
+  <!-- Modals -->
+  <Modal
+    v-if="openDeleteModal"
+    title="Delete"
+    message="Are you sure you want to delete this activity. Once deleted, it can't be gotten back."
+    confirmBtn="Delete"
+    declineBtn="Cancel"
+    :closeModal="closeDeleteModal"
+    :declineBtnHandler="closeDeleteModal"
+  />
+
   <div class="activity">
     <div class="activity_nav">
       <router-link to="/">
@@ -47,7 +58,7 @@
 
         <div class="btn">
           <div class="button">
-            <button>Revert (Mistake)</button>
+            <button @click="openModalHandler">Revert (Mistake)</button>
           </div>
         </div>
       </div>
@@ -81,12 +92,25 @@
 </template>
 
 <script>
+import Modal from "../../components/modal/Modal.vue";
 export default {
   data() {
-    return {};
+    return {
+      openDeleteModal: false,
+    };
+  },
+  components: {
+    Modal,
   },
   mounted() {},
-  method: {},
+  methods: {
+    openModalHandler() {
+      this.openDeleteModal = true;
+    },
+    closeDeleteModal() {
+      this.openDeleteModal = false;
+    },
+  },
 };
 </script>
 
@@ -190,15 +214,13 @@ export default {
 
         .home_body_card {
           animation: slideUp 0.5s ease-in-out forwards;
-          width: 160px;
+          width: calc(50% - 10px);
           box-shadow: 0px 4px 10px rgba(150, 150, 150, 0.2); /* Base shadow */
           transition: box-shadow 0.2s ease-in-out; /* Smooth hover transition */
-          // flex: 1;
           justify-content: center;
           padding: 5px 12px;
           height: 150px;
           display: flex;
-          // background-color: #fac9b5;
           border: 1px solid #e6f6ff;
           gap: 12px;
           border-radius: 12px;
